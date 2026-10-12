@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="za.co.wethinkcode.healthsafe.AppTest" time="0.557" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="za.co.wethinkcode.healthsafe.AppTest" time="0.492" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/wtc22/ntobeko_progress/healthsafe/target/surefire/surefirebooter-20261012122859719_3.jar /home/wtc22/ntobeko_progress/healthsafe/target/surefire 2026-10-12T12-28-59_645-jvmRun1 surefire-20261012122859719_1tmp surefire_0-20261012122859719_2tmp"/>
+    <property name="sun.java.command" value="/home/wtc22/ntobeko_progress/healthsafe/target/surefire/surefirebooter-20261012123223959_3.jar /home/wtc22/ntobeko_progress/healthsafe/target/surefire 2026-10-12T12-32-23_886-jvmRun1 surefire-20261012123223959_1tmp surefire_0-20261012123223959_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/wtc22/ntobeko_progress/healthsafe/target/test-classes:/home/wtc22/ntobeko_progress/healthsafe/target/classes:/home/wtc22/.m2/repository/io/javalin/javalin/5.6.3/javalin-5.6.3.jar:/home/wtc22/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/home/wtc22/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-server/11.0.17/jetty-server-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-http/11.0.17/jetty-http-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-util/11.0.17/jetty-util-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-io/11.0.17/jetty-io-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-webapp/11.0.17/jetty-webapp-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.17/jetty-servlet-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-security/11.0.17/jetty-security-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/jetty-xml/11.0.17/jetty-xml-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-server/11.0.17/websocket-jetty-server-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-common/11.0.17/websocket-jetty-common-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-core-common/11.0.17/websocket-core-common-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/11.0.17/websocket-servlet-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-core-server/11.0.17/websocket-core-server-11.0.17.jar:/home/wtc22/.m2/repository/org/eclipse/jetty/websocket/websocket-jetty-api/11.0.17/websocket-jetty-api-11.0.17.jar:/home/wtc22/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.21/kotlin-stdlib-jdk8-1.8.21.jar:/home/wtc22/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.8.21/kotlin-stdlib-1.8.21.jar:/home/wtc22/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.21/kotlin-stdlib-common-1.8.21.jar:/home/wtc22/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.21/kotlin-stdlib-jdk7-1.8.21.jar:/home/wtc22/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar:/home/wtc22/.m2/repository/com/rabbitmq/amqp-client/5.19.0/amqp-client-5.19.0.jar:/home/wtc22/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/wtc22/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/wtc22/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/wtc22/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/wtc22/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/wtc22/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/wtc22/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/wtc22/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/wtc22/ntobeko_progress/healthsafe/target/surefire/surefirebooter-20261012122859719_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/wtc22/ntobeko_progress/healthsafe/target/surefire/surefirebooter-20261012123223959_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-1-24.04.4-Ubuntu"/>
     <property name="user.name" value="wtc22"/>
@@ -54,13 +54,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testPostVitalsEndpoint" classname="za.co.wethinkcode.healthsafe.AppTest" time="0.522">
+  <testcase name="testPostVitalsEndpoint" classname="za.co.wethinkcode.healthsafe.AppTest" time="0.454">
     <system-err><![CDATA[[main] INFO io.javalin.Javalin - Starting Javalin ...
 [main] INFO org.eclipse.jetty.server.Server - jetty-11.0.17; built: 2023-10-09T18:39:14.424Z; git: 48e7716b9462bebea6732b885dbebb4300787a5c; jvm 21.0.12.1+1-1-24.04.4-Ubuntu
 [main] INFO org.eclipse.jetty.server.session.DefaultSessionIdManager - Session workerName=node0
 [main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started i.j.j.@3f57bcad{/,null,AVAILABLE}
-[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@57db2b13{HTTP/1.1, (http/1.1)}{0.0.0.0:40143}
-[main] INFO org.eclipse.jetty.server.Server - Started Server@24959ca4{STARTING}[11.0.17,sto=0] @479ms
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@57db2b13{HTTP/1.1, (http/1.1)}{0.0.0.0:38551}
+[main] INFO org.eclipse.jetty.server.Server - Started Server@24959ca4{STARTING}[11.0.17,sto=0] @429ms
 [main] INFO io.javalin.Javalin - 
        __                  ___          ______
       / /___ __   ______ _/ (_)___     / ____/
@@ -71,9 +71,9 @@
        https://javalin.io/documentation
 
 [main] INFO io.javalin.Javalin - Your JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
-[main] INFO io.javalin.Javalin - Listening on http://localhost:40143/
+[main] INFO io.javalin.Javalin - Listening on http://localhost:38551/
 [main] INFO io.javalin.Javalin - You are running Javalin 5.6.3 (released October 15, 2023. Your Javalin version is 1093 days old. Consider checking for a newer version.).
-[main] INFO io.javalin.Javalin - Javalin started in 186ms \o/
+[main] INFO io.javalin.Javalin - Javalin started in 160ms \o/
 [main] INFO io.javalin.Javalin - Stopping Javalin ...
 [main] INFO org.eclipse.jetty.server.Server - Stopped Server@24959ca4{STOPPING}[11.0.17,sto=0]
 [main] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@57db2b13{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
@@ -85,9 +85,9 @@
     <system-err><![CDATA[[main] INFO io.javalin.Javalin - Starting Javalin ...
 [main] INFO org.eclipse.jetty.server.Server - jetty-11.0.17; built: 2023-10-09T18:39:14.424Z; git: 48e7716b9462bebea6732b885dbebb4300787a5c; jvm 21.0.12.1+1-1-24.04.4-Ubuntu
 [main] INFO org.eclipse.jetty.server.session.DefaultSessionIdManager - Session workerName=node0
-[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started i.j.j.@366ef90e{/,null,AVAILABLE}
-[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@4f071df8{HTTP/1.1, (http/1.1)}{0.0.0.0:42249}
-[main] INFO org.eclipse.jetty.server.Server - Started Server@56ace400{STARTING}[11.0.17,sto=0] @786ms
+[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started i.j.j.@557a1e2d{/,null,AVAILABLE}
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6e1d8f9e{HTTP/1.1, (http/1.1)}{0.0.0.0:44829}
+[main] INFO org.eclipse.jetty.server.Server - Started Server@62fe6067{STARTING}[11.0.17,sto=0] @707ms
 [main] INFO io.javalin.Javalin - 
        __                  ___          ______
       / /___ __   ______ _/ (_)___     / ____/
@@ -98,13 +98,13 @@
        https://javalin.io/documentation
 
 [main] INFO io.javalin.Javalin - Your JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
-[main] INFO io.javalin.Javalin - Listening on http://localhost:42249/
+[main] INFO io.javalin.Javalin - Listening on http://localhost:44829/
 [main] INFO io.javalin.Javalin - You are running Javalin 5.6.3 (released October 15, 2023. Your Javalin version is 1093 days old. Consider checking for a newer version.).
 [main] INFO io.javalin.Javalin - Javalin started in 7ms \o/
 [main] INFO io.javalin.Javalin - Stopping Javalin ...
-[main] INFO org.eclipse.jetty.server.Server - Stopped Server@56ace400{STOPPING}[11.0.17,sto=0]
-[main] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@4f071df8{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
-[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped i.j.j.@366ef90e{/,null,STOPPED}
+[main] INFO org.eclipse.jetty.server.Server - Stopped Server@62fe6067{STOPPING}[11.0.17,sto=0]
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@6e1d8f9e{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped i.j.j.@557a1e2d{/,null,STOPPED}
 [main] INFO io.javalin.Javalin - Javalin has stopped
 ]]></system-err>
   </testcase>
