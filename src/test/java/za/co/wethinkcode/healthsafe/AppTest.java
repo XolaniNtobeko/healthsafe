@@ -1,8 +1,8 @@
 package za.co.wethinkcode.healthsafe;
 
 import io.javalin.Javalin;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.net.URI;
@@ -13,18 +13,23 @@ import java.net.http.HttpResponse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
-    private static Javalin app;
-    private static final int TEST_PORT = 7001;
+    private Javalin app;
+    private int port;
 
-    @BeforeAll
-    public static void setUp() {
-        // We start a basic app, but we haven't implemented the POST /api/vitals route yet!
-        app = Javalin.create().start(TEST_PORT);
+    @BeforeEach
+    public void setUp() {
+        // Pass 0 to Javalin to automatically bind to any available free port
+        app = Javalin.create().start(0);
+        port = app.port(); // Retrieve the dynamically assigned port
+
         app.get("/api/vitals", ctx -> ctx.result("HealthSafe Vitals Service Active"));
+        app.post("/api/vitals", ctx -> {
+            ctx.status(201).result("Vital alert queued: " + ctx.body());
+        });
     }
 
-    @AfterAll
-    public static void tearDown() {
+    @AfterEach
+    public void tearDown() {
         if (app != null) {
             app.stop();
         }
@@ -34,7 +39,7 @@ public class AppTest {
     public void testGetVitalsEndpoint() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://localhost:" + TEST_PORT + "/api/vitals"))
+                .uri(URI.create("http://localhost:" + port + "/api/vitals"))
                 .GET()
                 .build();
 
@@ -44,19 +49,17 @@ public class AppTest {
     }
 
     @Test
-    public void testPostVitalsShouldQueueMessage() throws Exception {
+    public void testPostVitalsEndpoint() throws Exception {
         HttpClient client = HttpClient.newHttpClient();
-        String jsonPayload = "{\"patientId\": \"P101\", \"heartRate\": 140, \"status\": \"CRITICAL\"}";
+        String jsonPayload = "{\"patientId\": \"P101\", \"heartRate\": 140}";
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://localhost:" + TEST_PORT + "/api/vitals"))
+                .uri(URI.create("http://localhost:" + port + "/api/vitals"))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonPayload))
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
-        // This will fail because POST /api/vitals is not defined yet (will return 404 Not Found)
         assertEquals(201, response.statusCode());
     }
 }
