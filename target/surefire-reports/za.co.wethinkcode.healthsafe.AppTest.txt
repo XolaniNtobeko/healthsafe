@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: za.co.wethinkcode.healthsafe.AppTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 s -- in za.co.wethinkcode.healthsafe.AppTest
